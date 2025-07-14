@@ -1,0 +1,29 @@
+@media screen and (max-width: 1473px) {
+    body {
+        background-color: white;
+
+    }
+    .search-bar {
+
+        margin-left: 130px;
+
+    }
+    
+    .search{
+        width:0;
+    }
+    .microphone{
+        margin-left: -130px;
+    }
+    .menu-icons{
+        margin-left: 0px;
+        position: absolute;
+        right: 0;
+    }
+    .sidebar{
+        display:none;
+    }
+    .video-section{
+        flex-direction:column;
+    }
+}

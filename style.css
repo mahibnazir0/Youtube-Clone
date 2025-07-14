@@ -1,0 +1,241 @@
+*,*::before,*after{
+    box-sizing: border-box;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.video-section{
+    display:flex;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 48px 16px;
+    padding: 48px 0px;
+    margin: 0 8px;
+    border-top: 4px solid white;
+}
+.video-section:first-child{
+    border-top: none;
+}   
+
+.video-container{
+    display: flex;
+    flex-direction:column;
+    margin-left:33px;
+}
+.thumbnail{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.thumbnail::before{
+    content:attr(data-duration);
+    position:absolute;
+    background-color:black;
+    color:white;
+    right:5px;
+    bottom:5px;
+    padding: 0.1em 0.3px;
+    border-radius:6px;
+    font-size: 14px;
+}
+
+.thumbnail-image{
+    width: 200%;
+    height:100%;
+    min-width:250px;
+    min-height:150px;
+    background-color: lightgray;
+}
+
+.video-bottom{
+    display:flex;
+    align-items: flex-start;
+    margin-top: 16px;
+}
+
+.channel-icon{
+    margin-top: 5px;
+    margin-right:12px;
+    border-radius:50%;
+    width: 36px;
+    height: 36px;
+    background-color: lightgray; 
+}
+
+.video-details{
+    display: flex;
+    flex-direction: column;
+}
+.video-titile{
+    font-size:17px;
+    font-weight:bold;
+    color:black;
+    margin-bottom: 8px;
+    text-decoration:none;
+}
+.video-channel-name{
+    margin-bottom:0.1rem;
+    text-decoration: none;
+    color:rgb(114, 113, 113);
+    transition: color 0.3s;
+}
+.video-channel-name:hover{
+    color:black; 
+}
+.video-stats{
+    color:rgb(114, 113, 113);
+}
+.video-section-title{
+    grid-column: 1/-1;
+    margin:-8px 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 8px;
+}
+.video-section-title-close{
+    border:none;
+    background:none;
+    padding: 0;
+    font-size: 24px;
+    color:rgb(114, 113, 113);
+    cursor:pointer
+
+}
+.videos{
+
+    color:grey;
+}
+
+.categories{
+    padding:12px 24px;
+    border-top: 1px solid rgb(94, 94, 94);
+    border-bottom: 1px solid rgb(94, 94, 94);
+
+}
+.categorie-sec{
+    display: flex;
+    overflow:hidden;
+    /* gap: 12px; */
+}
+.category{
+    margin-right:12px;
+    word-wrap: none;
+    white-space: nowrap;
+    border:1px solid rgb(94, 94, 94);
+    border-radius:900px;
+    background-color: rgb(223, 220, 220);
+    padding:6px 12px;
+    font-size:inherit;
+    cursor:pointer;
+    transition: background-color 0.3s;
+}
+.category:hover{
+    background-color: rgb(94, 94, 94);
+    color:white;
+}
+.category.last-child{
+    margin-right:0;
+} 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:12px;
+    overflow:hidden
+}
+.logo{
+    height:20px;
+    
+}
+.search-bar{
+    display:flex;
+    flex-grow:1; 
+    margin:0 auto;
+    max-width: 600px; 
+    height: 40px; 
+    /* align-items: center;
+    border:1px solid rgb(94, 94, 94); */
+    border-radius: 50PX;
+     
+}
+.search{
+
+    width:100%;
+    font-size:inherit;
+    padding: 3px;
+    border:1px solid rgb(94, 94, 94);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
+}
+   
+    
+    
+
+.search-button
+{
+ 
+display: flex;
+align-items: center;
+padding:0 20px;
+border:1px solid rgb(94, 94, 94);
+border-left: none;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+cursor:pointer;} 
+.search-button:hover{
+    background-color: rgb(94, 94, 94);
+    color:white;
+}
+.microphone{
+    margin-left: -135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-icons{
+    margin-left:259px;
+    display:flex;
+   
+    align-items:center;
+    gap:1.5rem;
+}
+
+.menu-channel-icon{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: lightgray;
+}
+
+.mainbody{
+    display: flex;
+    
+    height: (100vh -70px);
+    /* overflow: hidden; */
+}
+.sidebar{
+    height:100%;
+    width: 230px;
+    overflow-y: scroll;
+    background-color:   white;
+    /* background-color: rgb(223, 220, 220); */
+    padding: 12px; 
+}
+.sidebar-category{
+    display: flex;
+    align-items: center;
+    margin: 17px 13px; 
+}
+.sidebar-category:hover{
+    background-color: rgb(223, 220, 220);
+    cursor:pointer
+}
+
