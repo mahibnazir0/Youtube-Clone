@@ -9,7 +9,7 @@ body{
 }
 .video-section{
     display:flex;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); */
     gap: 48px 16px;
     padding: 48px 0px;
     margin: 0 8px;
