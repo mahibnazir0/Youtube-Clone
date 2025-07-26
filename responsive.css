@@ -10,7 +10,8 @@
     }
     
     .search{
-        width:0;
+        width:7.75rem;
+        border-radius: 1.25rem;
     }
     .microphone{
         margin-left: -8.125rem;
@@ -33,4 +34,8 @@
     .video-section-title{
         margin-left: 1.5rem;
     }
+    .search-button {
+        display: none;
+    }
+    
 }
