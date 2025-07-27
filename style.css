@@ -6,7 +6,9 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Roboto,Arial,sans-serif;
 }
+
 .video-section{
     display:flex;
     /* grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); */
@@ -77,6 +79,7 @@ body{
     color:black;
     margin-bottom: 8px;
     text-decoration:none;
+    margin-top:12px;
 }
 .video-channel-name{
     margin-bottom:0.1rem;
@@ -91,7 +94,7 @@ body{
     color:rgb(114, 113, 113);
 }
 .video-section-title{
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
     margin:-8px 0;
     display:flex;
     justify-content: space-between;
@@ -121,22 +124,22 @@ body{
 .categorie-sec{
     display: flex;
     overflow:hidden;
-    /* gap: 12px; */
+
 }
 .category{
     margin-right:12px;
     word-wrap: none;
     white-space: nowrap;
     border:1px solid rgb(94, 94, 94);
-    border-radius:900px;
-    background-color: rgb(223, 220, 220);
+    border-radius:8px;
+    background-color: rgb(228, 228, 228);
     padding:6px 12px;
     font-size:inherit;
     cursor:pointer;
     transition: background-color 0.3s;
 }
 .category:hover{
-    background-color: rgb(94, 94, 94);
+    background-color: rgb(129, 127, 127);
     color:white;
 }
 .category.last-child{
@@ -195,7 +198,7 @@ cursor:pointer;}
     color:white;
 }
 .microphone{
-    margin-left: -135px;
+    margin-left: -134px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,7 +225,7 @@ cursor:pointer;}
     /* overflow: hidden; */
 }
 .sidebar{
-    height:100%;
+    height:full;
     width: 230px;
     overflow-y: scroll;
     background-color:   white;
@@ -233,9 +236,47 @@ cursor:pointer;}
     display: flex;
     align-items: center;
     margin: 17px 13px; 
+
 }
 .sidebar-category:hover{
     background-color: rgb(223, 220, 220);
     cursor:pointer
+}
+.channel-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.sidebar-home{
+    display: flex;
+    margin-right:2px;
+}
+.sidebar-trending{
+    display: flex;
+    margin-right:2px;
+}
+.sidebar-subscription{
+    display: flex;
+    margin-right:2px;
+}
+.sidebar-history{
+    display: flex;
+    margin-right:2px;
+}
+.sidebar-downloads{
+    display: flex;
+    margin-right:2px;
+}
+.sidebar-later{
+    display: flex;
+    margin-right:2px;
+}
+.sidebar-music{
+    display: flex;
+    margin-right:2px;
+}
+.sidebar-liked{
+    display: flex;
+    margin-right:2px;
 }
 
