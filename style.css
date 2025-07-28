@@ -94,7 +94,7 @@ body{
     color:rgb(114, 113, 113);
 }
 .video-section-title{
-    /* grid-column: 1/-1; */
+    
     margin:-8px 0;
     display:flex;
     justify-content: space-between;

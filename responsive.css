@@ -40,3 +40,43 @@
     
     
 }
+@media(min-width: 1550px)
+{
+    
+    .search-bar{
+        padding:6px;
+        max-width: 50%;
+    }
+    .search{
+       height:44px;
+
+    }
+    .search-button{
+        height:44px;
+
+    }
+    .microphone{
+        margin-left: -144px;
+        height:30px;
+        margin-top:2px; 
+    }
+    .notification
+    {
+        height:30px;
+        margin-top:2px;
+    }
+    .logo{
+        height:30px;
+        margin-top:2px;
+    }
+    .video-section{
+      gap:140px;
+      margin-left:17px;
+    }
+    .video-container{
+        width:410px;
+    }
+    .sidebar{
+        width:242px;
+    }
+}
