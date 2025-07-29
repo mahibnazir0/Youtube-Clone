@@ -94,11 +94,11 @@ body{
 }
 .video-section-title{
     
-    margin:-8px 0;
+    margin: 0;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 8px;
+    padding-top:8px;
 }
 .video-section-title-close{
     border:none;
@@ -111,7 +111,7 @@ body{
 }
 .videos{
 
-    color:grey;
+    color:black;
 }
 
 .categories{
@@ -169,7 +169,7 @@ body{
 
     width:100%;
     font-size:inherit;
-    padding: 3px;
+    padding: 14px;
     border:1px solid rgb(94, 94, 94);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -234,16 +234,20 @@ cursor:pointer;}
     display: flex;
     align-items: center;
     margin: 17px 13px; 
+    
 
 }
-.sidebar-category:hover{
+.sidebar-category:hover {
     background-color: rgb(223, 220, 220);
-    cursor:pointer
+    cursor:pointer;
+    padding: 2px 4px;
+    
 }
 .channel-title {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin:3px;
 }
 .sidebar-home{
     display: flex;
