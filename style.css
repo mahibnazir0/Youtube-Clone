@@ -11,7 +11,6 @@ body{
 
 .video-section{
     display:flex;
-    /* grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); */
     gap: 48px 16px;
     padding: 48px 0px;
     margin: 0 8px;
@@ -139,8 +138,8 @@ body{
     transition: background-color 0.3s;
 }
 .category:hover{
-    background-color: rgb(129, 127, 127);
-    color:white;
+    background-color: rgb(168, 166, 166);
+    color:black;
 }
 .category.last-child{
     margin-right:0;
@@ -162,8 +161,7 @@ body{
     margin:0 auto;
     max-width: 600px; 
     height: 40px; 
-    /* align-items: center;
-    border:1px solid rgb(94, 94, 94); */
+   
     border-radius: 50PX;
      
 }
@@ -194,7 +192,7 @@ border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
 cursor:pointer;} 
 .search-button:hover{
-    background-color: rgb(94, 94, 94);
+    background-color:  rgb(168, 166, 166);
     color:white;
 }
 .microphone{
@@ -222,14 +220,14 @@ cursor:pointer;}
     display: flex;
     
     height: (100vh -70px);
-    /* overflow: hidden; */
+  
 }
 .sidebar{
     height:full;
     width: 230px;
     overflow-y: scroll;
     background-color:   white;
-    /* background-color: rgb(223, 220, 220); */
+  
     padding: 12px; 
 }
 .sidebar-category{
@@ -249,34 +247,34 @@ cursor:pointer;}
 }
 .sidebar-home{
     display: flex;
-    margin-right:2px;
+    margin-right:5px;
 }
 .sidebar-trending{
     display: flex;
-    margin-right:2px;
+    margin-right:5px;
 }
 .sidebar-subscription{
     display: flex;
-    margin-right:2px;
+    margin-right:5px;
 }
 .sidebar-history{
     display: flex;
-    margin-right:2px;
+    margin-right:5px;
 }
 .sidebar-downloads{
     display: flex;
-    margin-right:2px;
+    margin-right:5px;
 }
 .sidebar-later{
     display: flex;
-    margin-right:2px;
+    margin-right:5px;
 }
 .sidebar-music{
     display: flex;
-    margin-right:2px;
+    margin-right:5px;
 }
 .sidebar-liked{
     display: flex;
-    margin-right:2px;
+    margin-right:5px;
 }
 
