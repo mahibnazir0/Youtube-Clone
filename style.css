@@ -94,11 +94,11 @@ body{
 }
 .video-section-title{
     
-    margin: 0;
+    margin-left: 38px;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding-top:8px;
+    
 }
 .video-section-title-close{
     border:none;
@@ -241,6 +241,8 @@ cursor:pointer;}
     background-color: rgb(223, 220, 220);
     cursor:pointer;
     padding: 2px 4px;
+    border-radius: 4px;
+    transition: 0.4s ease-out;
     
 }
 .channel-title {
