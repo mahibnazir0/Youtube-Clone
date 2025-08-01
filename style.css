@@ -8,10 +8,7 @@ body{
     padding: 0;
     font-family: Roboto,Arial,sans-serif;
 }
-body.dark-mode{
-    background-color: rgb(50, 49, 49);
-    color:white;
-}
+
 
 .video-section{
     display:flex;
@@ -325,9 +322,52 @@ display: flex;
   height:30px;
 }
 input:checked + .slider {
-  background-color:black;
+  background-color:rgb(35, 35, 35);
 }
-
 input:checked + .slider:before {
   transform: translateX(10px);
+}
+/******************** Dark Mode ******************************/
+body.dark-mode{
+    background-color:rgb(50, 50, 50);
+.search-button{
+    background-color: rgb(50, 50, 50);
+}
+
+.search{
+    background-color: rgb(50,50,50);
+}
+.sidebar{
+    background-color:rgb(50,50,50) ;
+    color:white;
+    
+
+}
+.video-titile{
+    color: white;
+}
+.video-channel-name{
+    color: #aaa;
+    transition: color 0.3s;
+}
+.video-channel-name:hover
+{
+    color:white;
+}
+.video-stats{
+    color:#aaa;
+}
+.video-section-title{
+    background-color: rgb(50, 50, 50);
+    color:white;
+}
+.video-section{
+    background-color: rgb(50, 50, 50);
+    border-color:rgb(50, 50, 50);
+}
+.category{
+    background-color: rgb(50, 50, 50);
+    color:white;
+}
+
 }
