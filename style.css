@@ -8,6 +8,10 @@ body{
     padding: 0;
     font-family: Roboto,Arial,sans-serif;
 }
+body.dark-mode{
+    background-color: rgb(50, 49, 49);
+    color:white;
+}
 
 .video-section{
     display:flex;
@@ -283,4 +287,47 @@ cursor:pointer;}
     display: flex;
     margin-right:5px;
 }
+.switch {
+  position: relative;
+  display: flex;
+  width: 60px;
+  height: 30px;
+}
+.slider {
+display: flex;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; 
+  width: 20px;
+  left: 5px; 
+  bottom: 5px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+.ThemeButton {
+  text-align: center;
+  margin-left:180px;
+  margin-right:-230px;
+  display: flex;
+  width:40px;
+  height:30px;
+}
+input:checked + .slider {
+  background-color:black;
+}
 
+input:checked + .slider:before {
+  transform: translateX(10px);
+}
