@@ -1,7 +1,10 @@
 :root{
     --div-display:flex;
     --div-background-color:lightgray;
-    --div-color:black;
+    --div-position:relative;
+    --div-cursor:pointer;
+    --div-justify-content:center;
+    --div-align-items:center;
 }
 
 
@@ -35,9 +38,9 @@ body{
 }
 .thumbnail{
     display:var(--div-display);
-    position:relative;
-    align-items: center;
-    justify-content: center;
+    position:var(--div-position);
+    align-items: var(--div-align-items);
+    justify-content: var(--div-justify-content);
     overflow: hidden;
     border-radius: 8px;
 }
@@ -106,7 +109,7 @@ body{
     margin-left: 38px;
     display:var(--div-display);
     justify-content: space-between;
-    align-items: center;
+    align-items: var(--div-align-items);
     
 }
 .video-section-title-close{
@@ -115,7 +118,7 @@ body{
     padding: 0;
     font-size: 24px;
     color:rgb(114, 113, 113);
-    cursor:pointer
+    cursor:var(--div-cursor)
 
 }
 .videos{
@@ -143,7 +146,7 @@ body{
     background-color:rgb(228, 228, 228);
     padding:6px 12px;
     font-size:inherit;
-    cursor:pointer;
+    cursor:var(--div-cursor);
     transition: var(--div-background-color) 0.3s;
 }
 .category:hover{
@@ -156,7 +159,7 @@ body{
 .header{
     display: var(--div-display);
     justify-content: space-between;
-    align-items:center;
+    align-items:var(--div-align-items);
     padding:12px;
     overflow:hidden
 }
@@ -193,13 +196,13 @@ body{
 {
  
 display: var(--div-display);
-align-items: center;
+align-items: var(--div-align-items);
 padding:0 20px;
 border:1px solid rgb(94, 94, 94);
 border-left: none;
 border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
-cursor:pointer;} 
+cursor:var(--div-cursor);} 
 .search-button:hover{
     --div-background-color:  rgb(168, 166, 166);
     color:white;
@@ -207,13 +210,13 @@ cursor:pointer;}
 .microphone{
     margin-left: -134px;
     display: var(--div-display);
-    align-items: center;
-    justify-content: center;
+    align-items: var(--div-align-items);
+    justify-content: var(--div-justify-content);
 }
 .menu-icons{
     margin-left:259px;
     display:var(--div-display);
-    align-items:center;
+    align-items:var(--div-align-items);
     gap:1.5rem;
 }
 
@@ -238,14 +241,14 @@ cursor:pointer;}
 }
 .sidebar-category{
     display: var(--div-display);
-    align-items: center;
+    align-items: var(--div-align-items);
     margin: 17px 13px; 
     
 
 }
 .sidebar-category:hover {
     background-color: rgb(228, 228, 228);
-    cursor:pointer;
+    cursor:var(--div-cursor);
     padding: 2px 4px;
     border-radius: 4px;
     transition: 0.4s ease-out;
@@ -253,7 +256,7 @@ cursor:pointer;}
 }
 .channel-title {
     display: var(--div-display);
-    align-items: center;
+    align-items: var(--div-align-items);
     gap: 0.5rem;
     margin:3px;
 }
@@ -290,7 +293,7 @@ cursor:pointer;}
     margin-right:5px;
 }
 .switch {
-  position: relative;
+  position: var(--div-position);
   display: var(--div-display);
   width: 60px;
   height: 30px;
@@ -298,7 +301,7 @@ cursor:pointer;}
 .slider {
 display: var(--div-display);
   position: absolute;
-  cursor: pointer;
+  cursor: var(--div-cursor);
   top: 0;
   left: 0;
   right: 0; 
